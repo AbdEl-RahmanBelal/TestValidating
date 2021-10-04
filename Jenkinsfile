@@ -21,10 +21,16 @@ pipeline {
           }
         }
 
+        stage('Test3') {
+          steps {
+            echo 'Test 3 completed'
+          }
+        }
+
       }
     }
 
-    stage('Deplo') {
+    stage('Deploy') {
       steps {
         echo 'Deploy completed'
       }
